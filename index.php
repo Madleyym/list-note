@@ -62,62 +62,62 @@ require_once 'config/koneksi.php';
         </div>
     </div>
 
-    <!-- Airdrop Features Section -->
-    <div class="features py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Airdrop Feature</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-gift fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Airdrop Gratis</h5>
-                            <p class="card-text">Dapatkan token gratis hanya dengan mengikuti tugas sederhana!</p>
-                        </div>
+ <!-- Airdrop Features Section -->
+<div class="features py-5 mb-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Airdrop Feature</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-gift fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Airdrop Gratis</h5>
+                        <p class="card-text">Dapatkan token gratis hanya dengan mengikuti tugas sederhana!</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-users fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Komunitas Aktif</h5>
-                            <p class="card-text">Bergabung dengan komunitas yang aktif dan berbagi informasi tentang airdrop.</p>
-                        </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Komunitas Aktif</h5>
+                        <p class="card-text">Bergabung dengan komunitas yang aktif dan berbagi informasi tentang airdrop.</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Pelacakan Airdrop</h5>
-                            <p class="card-text">Pantau perkembangan airdrop yang telah kamu ikuti dengan mudah.</p>
-                        </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Pelacakan Airdrop</h5>
+                        <p class="card-text">Pantau perkembangan airdrop yang telah kamu ikuti dengan mudah.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Catatan Airdrop Platform</h5>
-                    <p>Platform airdrop terkemuka List Airdrops.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <h5>Kontak Order</h5>
-                    <p>Email: efbeesone@gmail.com</p>
-                </div>
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Catatan Airdrop Platform</h5>
+                <p>Platform airdrop terkemuka List Airdrops.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <h5>Kontak Order</h5>
+                <p>Email: efbeesone@gmail.com</p>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Font Awesome -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- Font Awesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </body>
 
 </html>
