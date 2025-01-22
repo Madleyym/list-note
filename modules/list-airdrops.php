@@ -417,7 +417,7 @@ if (!isset($pdo)) {
                 </div>
                 <div class="col-md-6 text-md-end">
                     <h5>Kontak Order</h5>
-                    <p>Email: efbeesone@gmail.com</p>
+                    <p>Email: example@gmail.com</p>
                 </div>
             </div>
         </div>
