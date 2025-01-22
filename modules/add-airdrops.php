@@ -14,10 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         // Prepare statement dengan PDO
-        $sql = "INSERT INTO airdrops_list (name, link, token, start_date, end_date, status, 
-                account_google, account_discord, account_twitter) 
-                VALUES (:name, :link, :token, :start_date, :end_date, :status, 
-                :account_google, :account_discord, :account_twitter)";
+        $sql = "INSERT INTO airdrops_list (name, token, link, start_date, end_date, account_google, account_discord, account_twitter, wallet, address, status) 
+        VALUES (:name, :token, :link, :start_date, :end_date, :account_google, :account_discord, :account_twitter, :wallet, :address, :status)";
 
         $stmt = $pdo->prepare($sql);
 
