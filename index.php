@@ -16,6 +16,8 @@ require_once 'config/koneksi.php';
     <title>List Airdrops</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <img src="assets/images/airdrop.png" alt="Airdrop Platform" class="img-fluid" style="margin-left: -5px;"> -->
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -36,9 +38,9 @@ require_once 'config/koneksi.php';
                     <li class="nav-item">
                         <a class="nav-link" href="auth/login.php">Masuk</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="airdrop.php">Airdrop</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -51,9 +53,9 @@ require_once 'config/koneksi.php';
                 <div class="col-md-6">
                     <h1 class="display-4 mb-4">Catatan Airdrops!</h1>
                     <p>Aplikasi platform airdrop ini hanya digunakan untuk mencatat airdrop.</p>
-                    <a href="./modules/dashboard.php" class="btn btn-primary btn-lg">List Airdrops</a>
+                    <a href="./modules/list-airdrops.php" class="btn btn-primary btn-lg">List Airdrops</a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <img src="assets/images/airdrop.png" alt="Airdrop Platform" class="img-fluid">
                 </div>
             </div>
