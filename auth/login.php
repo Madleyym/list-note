@@ -1,3 +1,46 @@
+<?php
+session_start();
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+require_once '../config/koneksi.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']); // Don't hash it yet
+
+    $query = "SELECT user_id, username, password FROM users WHERE username = :username";
+    $stmt = $pdo->prepare($query);
+
+    try {
+        $stmt->execute(['username' => $username]);
+
+        if ($stmt->rowCount() > 0) {
+            $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            // Use password_verify for bcrypt comparison
+            if (password_verify($password, $user['password'])) {
+                $_SESSION['login'] = true;
+                $_SESSION['user_id'] = $user['user_id'];
+                $_SESSION['username'] = $user['username'];
+
+                header('Location: ../modules/dashboard.php');
+                exit;
+            } else {
+                $error = 'Password salah';
+                error_log("Password mismatch for user: " . $username);
+            }
+        } else {
+            $error = 'Username tidak ditemukan';
+            error_log("No user found with username: " . $username);
+        }
+    } catch (PDOException $e) {
+        error_log("Database error: " . $e->getMessage());
+        die("Terjadi kesalahan: " . $e->getMessage());
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -145,6 +188,9 @@
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Login</button>
                 </form>
+                <!-- <div class="text-center mt-3">
+                    <p>Already have an account? <a href="register.php">Register here</a></p>
+                </div> -->
                 <div class="demo-credentials">
                     <p>Info Order:</p>
                     <p><span class="highlight">Telegram:</span> admin</p>
